@@ -68,6 +68,7 @@ async function lookup(name, serverName) {
     ok: true,
     name: p.characterName || found.plainName,
     server: p.serverName || found.serverName,
+    serverShort: (servers.find(s => s.id === (p.serverId || found.serverId)) || sv).short || String(p.serverName || found.serverName || '').slice(0, 2),
     serverId: p.serverId || found.serverId,
     race: p.raceName || null,
     className: p.className || null,
