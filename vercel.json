@@ -1,0 +1,6 @@
+{
+  "regions": ["icn1"],
+  "functions": {
+    "api/char.js": { "maxDuration": 10 }
+  }
+}
